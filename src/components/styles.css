@@ -1,0 +1,207 @@
+.header {
+    width: 80%;
+    background-color: black; 
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    padding: 10px;
+    /* background-color: #0077cc;  */
+    color: white;
+    border-radius: 5px;
+}
+
+h2, h3 {
+text-align: center;
+}
+
+/* Navigation on the right */
+nav {
+    margin-left: auto;
+}
+
+/* Responsive navigation (burger menu on small devices) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #333;
+        width: 200px;
+        display: none;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .nav-toggle {
+        display: initial;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .nav-toggle:hover {
+        cursor: pointer;
+    }
+}
+
+
+/* FOOTER STYLING */
+
+
+
+/* .footer {
+    background-color: black;
+    margin-top: -0.5em;
+    padding: 2em;
+    position: fixed; 
+    left: 10;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  text-align: center;
+  } */
+
+
+  .footer {
+    background-color: black;
+    color: white; /* Ensure text is visible on the black background */
+    margin-top: -0.5em;
+    padding: 1em;
+    position: fixed;
+    left: 0; /* Fix positioning */
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 1em; /* Add some space between icons and text */
+}
+
+.social-icon {
+    margin: 0 10px; /* Space out the icons */
+    color: white; /* Icon color */
+    font-size: 24px; /* Adjust icon size as needed */
+}
+
+.social-icon:hover {
+    color: #0077cc; /* Highlight color on hover */
+}
+
+
+
+/* RESUME STYLING */
+
+/* .resume-section {
+    padding: 20px;
+    background-color: black; 
+    color: white; 
+    justify-content: center;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .download-link {
+    display: inline-block;
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  
+  .download-link:hover {
+    background-color: #0056b3; 
+  }
+  
+  .proficiencies-title {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .proficiencies-list {
+    list-style: none; 
+    padding-left: 0;
+  }
+  
+  .proficiency-item {
+    background-color: #333; 
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+  }
+  
+
+  .download-link {
+    align-items: center;
+  } */
+
+  .resume-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    background-color: black;
+  }
+  
+  .section-title, .proficiencies-title {
+    width: 100%; /* Ensure titles span the full width of the container */
+    text-align: center; /* Center text */
+  }
+  
+  .download-link {
+    display: block; /* Make the link a block element */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px 0; /* Add vertical spacing */
+    text-align: center; /* Center the text inside the button */
+  }
+  
+  .download-link:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+  
+  .proficiencies-list {
+    list-style: none; /* Remove default list styling */
+    padding-left: 0;
+    width: 100%; /* Full width to match the centered titles */
+  }
+  
+  .proficiency-item {
+    background-color: #333; /* Light gray background */
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 6px 0; /* Vertical margin for spacing */
+  }
+  
